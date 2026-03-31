@@ -127,26 +127,7 @@ If webcam mode does not appear/work:
 - allow browser camera permissions,
 - verify no other app is locking the camera.
 
-## Theoretical Foundation (Postgraduate Level)
-Canny edge detection optimizes three criteria:
-- high detection rate,
-- accurate localization,
-- minimal multiple responses for one edge.
 
-For image $I(x,y)$, smoothed image is:
-$$
-I_s(x,y) = I(x,y) * G_\sigma(x,y)
-$$
-
-Sobel derivatives:
-$$
-G_x = I_s * S_x, \quad G_y = I_s * S_y
-$$
-
-Magnitude and orientation:
-$$
-|G| = \sqrt{G_x^2 + G_y^2}, \quad \theta = \tan^{-1}\left(\frac{G_y}{G_x}\right)
-$$
 
 Non-maximum suppression thins edges along local gradient direction.
 Double thresholding labels strong/weak/non-edge pixels.
