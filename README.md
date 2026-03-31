@@ -155,6 +155,15 @@ Marker-controlled topographic segmentation for touching/overlapping objects.
 4. Export maps for maintenance reporting.
 5. Repeat periodically to track deterioration progression.
 
+## Development Timeline
+1. Initialized project structure and modular Python files.
+2. Implemented full custom Canny stages for algorithm-level learning.
+3. Added OpenCV Canny baseline for runtime comparison.
+4. Implemented contour, region-growing, and watershed segmentation.
+5. Built Streamlit interface for upload, tuning, visualization, and download.
+6. Added webcam mode, parameter sensitivity analysis, and performance table.
+7. Finalized documentation, reproducibility notes, and troubleshooting.
+
 ## Troubleshooting
 ### Error: No module named streamlit
 Run:
@@ -197,3 +206,11 @@ The interface shows, side-by-side:
 - runtime and sensitivity plots.
 
 This README is intentionally written so a new user can set up, run, and use the project without prior project context.
+
+## Submission Checklist
+- Code is version-controlled and published on GitHub.
+- Setup steps are reproducible from this README.
+- Required dependencies are listed in requirements.txt.
+- Custom and OpenCV Canny implementations are included.
+- Contour and region-based segmentation outputs are included.
+- Streamlit UI supports upload, parameter tuning, and downloads.
